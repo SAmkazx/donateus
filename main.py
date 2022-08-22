@@ -33,7 +33,7 @@ DONATE_BUTTONS = [
 DONATE_TEXT = """Hᴇʏ! {}
 Yᴏᴜ Cᴀɴ Dᴏɴᴀᴛᴇ Uꜱ Uꜱɪɴɢ UPI.
 
-PayTm/PhonePe/GooglePay - `zxrdraj@okaxis`
+PayTm/PhonePe/GooglePay - `ABCD1234@okaxis`
 
 Oʀ Cᴏɴᴛᴀcᴛ Uꜱ :- [ツowner 🇮🇳](https://t.me/DeltaBotsOfficial). """
 
