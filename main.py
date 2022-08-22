@@ -1,5 +1,3 @@
-# Developed By : Abhishek Kumar (https://telegram.me/TheTeleRoid) 
-
 import os
 from pyrogram import Client, filters
 from pyrogram.errors import QueryIdInvalid
@@ -10,7 +8,7 @@ from pyrogram.types import InlineQueryResultArticle
 
 
 Bot = Client(
-    "Donate",
+    "TGDonateBot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
@@ -21,7 +19,7 @@ START_TEXT = """Hᴇʏ! {}
 
 ☞ Vᴇʀʏ Hᴀᴘᴘʏ ᴛᴏ Kɴᴏᴡ Tʜᴀᴛ Yᴏᴜ ᴀʀᴇ Dᴏɴᴀᴛɪɴɢ Uꜱ.
 
-Tʜᴀɴᴋꜱ Fᴏʀ Uꜱɪɴɢ [Oᴜʀ Bᴏᴛꜱ](https://t.me/+KYLCdC4XfcdmNGVl).
+Tʜᴀɴᴋꜱ Fᴏʀ Uꜱɪɴɢ [Oᴜʀ Bᴏᴛꜱ](https://t.me/Latest_hindi_hd_Movies_Hub).
 
 Mᴀᴅᴇ Wɪᴛʜ Lᴏᴠᴇ Fᴏʀ [Yᴏᴜ](tg://settings)"""
 
@@ -35,9 +33,9 @@ DONATE_BUTTONS = [
 DONATE_TEXT = """Hᴇʏ! {}
 Yᴏᴜ Cᴀɴ Dᴏɴᴀᴛᴇ Uꜱ Uꜱɪɴɢ UPI.
 
-PayTm/PhonePe/GooglePay - `sk7062563@okhdfcbank`
+PayTm/PhonePe/GooglePay - `zxrdraj@okaxis`
 
-Oʀ Cᴏɴᴛᴀcᴛ Uꜱ :- [ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ 🇮🇳](https://telegram.me/HelpLessBoi). """
+Oʀ Cᴏɴᴛᴀcᴛ Uꜱ :- [ツowner 🇮🇳](https://t.me/DeltaBotsOfficial). """
 
 BUTTON_TEXT = """ Click the Below Buttons To Donate Us. """
 
@@ -45,7 +43,7 @@ UPI_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(" Back ", callback_data="back"),
-            InlineKeyboardButton(" PayPal ", url="https://paypal.me/AbhishekKumarIN47")
+            InlineKeyboardButton(" PayPal ", url="https://paypal.me/")
         ],
         [
             InlineKeyboardButton('Close', callback_data='close')
@@ -57,7 +55,7 @@ PAY_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(" UPI ", callback_data="upidata"),
-            InlineKeyboardButton(" PayPal ", url="https://paypal.me/AbhishekKumarIN47")
+            InlineKeyboardButton(" PayPal ", url="https://paypal.me/")
         ],
         [
             InlineKeyboardButton('Close', callback_data='close')
@@ -87,7 +85,7 @@ async def donate(bot, update):
 @Bot.on_message(filters.private & filters.command(["bots"]))
 async def bots(bot, update):
     await bot.send_message(
-        text="https://t.me/+t1ko_FOJxhFiOThl",
+        text="https://t.me/Latest_hindi_hd_Movies_Hub",
         reply_markup=InlineKeyboardMarkup([PAY_BUTTONS]),
         disable_web_page_preview=True,
         quote=True
@@ -99,7 +97,7 @@ async def answerX(bot, update):
     answer = list()
     answer.append(InlineQueryResultArticle(title="This is My Donation Or Payment Bot", description="You Can Donate Us Using Inline.",
     input_message_content=InputTextMessageContent(message_text="Please donate us any amount you like, to support the services."),
-    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Dᴏɴᴀᴛᴇ 💳", url="https://upayi.ml/sk7062563@okhdfcbank/10") ] ] ),
+    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Dᴏɴᴀᴛᴇ 💳", url="") ] ] ),
     thumb_url="https://telegra.ph/file/330bd070950b8ef775ca9.jpg") )
     try:
         await update.answer(results=answer, cache_time=0)
